@@ -1,0 +1,15 @@
+html {
+	position: relative;
+	width: auto; 
+}
+
+
+.awal {
+    background : url("../assets/jayawijaya.jpg") no-repeat fixed;
+    background-size: 1366px 768px;
+    height: 768px;
+}
+
+.satu {
+    background-color: white;
+}
