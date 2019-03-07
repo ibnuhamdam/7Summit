@@ -3,13 +3,71 @@ html {
 	width: auto; 
 }
 
+.navbar-dark .navbar-nav .nav-link {
+    color: white !important;
+}
+
+.nav-link:hover{
+    color: black !important;
+}
 
 .awal {
     background : url("../assets/jayawijaya.jpg") no-repeat fixed;
     background-size: 1366px 768px;
-    height: 768px;
+    height: 668px;
 }
 
 .satu {
     background-color: white;
+}
+
+nav ul {
+    margin-left: 35%;
+}
+
+nav {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+nav li {
+    padding: 0 35px;
+}
+
+.sum p{
+
+    margin-right: 18%;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 90px;
+    font-size: 72px;
+    text-align: center;
+    letter-spacing: 0.11em;
+
+    color: rgba(66, 71, 193, 0.86);
+}
+
+.sum {
+    margin-top: 20%;
+    width: 600px;
+    height: 91px;
+}
+
+.mit {
+    margin-left: 19%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 80px;
+    font-size: 64px;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #E1E3EC;
+
+
+}
+
+@media(max-width: 786px) {
 }
