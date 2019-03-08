@@ -1,22 +1,18 @@
-(function($) {
-    "use strict";
+$(window).scroll(function() {
+    console.log($(this).scrollTop());
+    
+    if($(this).scrollTop() > 665)  /*height in pixels when the navbar becomes non opaque*/ 
+    {
+        $('.custom-navbar').addClass('opaque');
+    } else {
+        $('.custom-navbar').removeClass('opaque');
+    }
 
-    var $navbar = $("#navbar"),
-        y_pos = $navbar.offset().top,
-        height = $navbar.height();
-
-    $(document).scroll(function() {
-        var scrollTop = $(this).scrollTop();
-
-        if (scrollTop > y_pos + height) {
-            $navbar.addClass("navbar-fixed").animate({
-                top: 0
-            });
-        } else if (scrollTop <= y_pos) {
-            $navbar.removeClass("navbar-fixed").clearQueue().animate({
-                top: "-48px"
-            }, 0);
-        }
+    $('.sum p').css({
+		'transform' : 'translate('+ $(this).scrollTop()/20+'%, '+ $(this).scrollTop()/4 +'%)'
     });
-
-})(jQuery, undefined);
+    
+    $('.mit').css({
+		'transform' : 'translate(-'+ $(this).scrollTop()/20+'%, '+ $(this).scrollTop()/4 +'%)'
+	});
+});

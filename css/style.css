@@ -3,12 +3,27 @@ html {
 	width: auto; 
 }
 
-.navbar-dark .navbar-nav .nav-link {
-    color: white !important;
+.custom-navbar {
+    background-color: rgba(0,0,0,0);
+    /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
+    height: 50px;
+    border-bottom: 0px;
+    transition: background-color .5s ease 0s;
+    color: white;
+  }
+
+.navbar-nav {
+    margin-left: 20%;
+}
+.navbar-nav li {
+    padding: 0 70px;
 }
 
-.nav-link:hover{
-    color: black !important;
+.opaque {
+    background-color: rgba(38,144,212,1);
+    height: 50px;
+    border-bottom: 0px;
+    transition: background-color .5s ease 0s;
 }
 
 .awal {
@@ -17,20 +32,14 @@ html {
     height: 668px;
 }
 
+.pull-right {
+    text-decoration: none;
+    float: left;
+}
+
 .satu {
-    background-color: white;
-}
-
-nav ul {
-    margin-left: 35%;
-}
-
-nav {
-    font-family: 'Montserrat', sans-serif !important;
-}
-
-nav li {
-    padding: 0 35px;
+    background: url('../assets/Bukitraya.jpg') no-repeat;
+    height: 668px
 }
 
 .sum p{
@@ -49,7 +58,7 @@ nav li {
 }
 
 .sum {
-    margin-top: 20%;
+    margin-top: 25%;
     width: 600px;
     height: 91px;
 }
@@ -69,5 +78,37 @@ nav li {
 
 }
 
+.si-glyph * {
+    fill: white;
+    }
+    
+
+.go {
+    margin-top: 100px;
+    color: white;
+    font-size: 36px;
+}
+
+.tujuh {
+    margin-top: 30%;
+    color: white;
+}
+
+.bukit {
+    margin-top: 23%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 60px;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: -0.04em;
+
+    color: #FFFFFF;
+
+
+}
+
 @media(max-width: 786px) {
+    
 }
