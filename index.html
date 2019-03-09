@@ -20,7 +20,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link page-scroll" href="#awal">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Gallery</a>
@@ -35,7 +35,7 @@
     <!-- Navbar -->
 
     <!-- Halaman Awal -->
-    <section class="awal">
+    <section class="awal" id="awal">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xl-12 sum">
@@ -49,15 +49,20 @@
             </div>
             <div class="row">
               <div class="col-md-12 col-sm-12 go text-center">
-                Let's GO
+                <a href="#satu" type="button" class="page-scroll btn btn-primary btn-lg">Let's Go</a>
               </div>
             </div>
+        </div>
+
+        <div class="goup">
+          <a href="#awal" class="page-scroll"><img src="assets/summit.svg" alt=""></a>
+          <p class="text-center">UP</p>
         </div>
     </section>  
     <!-- Halaman Awal -->
 
     <!-- 1 -->
-    <section class="satu">
+    <section class="satu" id="satu">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 tujuh">
@@ -66,17 +71,38 @@
                 <div class="col-md-6 tujuh">
                     <div class="row">
                       <div class="col-md-12">
-                        <svg-icon><src href="svg/si-glyph-bed.svg"/></svg>Kabupaten Katingan, Kalimantan Tengah.
+                        <div class="row s">
+                          <div class="col-md-2 text-right">
+                              <img src="assets/placeholder.svg" alt="">
+                          </div>
+                          <div class="col-md-10">
+                              Katingan, Kalimantan Tengah.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row ">
+                      <div class="col-md-12">
+                        <div class="row s">
+                          <div class="col-md-2 text-right">
+                            <img src="assets/peak.svg" alt="">
+                          </div>
+                          <div class="col-md-10">
+                            2.278 mdpl
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-md-12">
-                        check2
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        check3
+                        <div class="row s">
+                          <div class="col-md-2 text-right">
+                            <img src="assets/catalogue.svg" alt="">
+                          </div>
+                          <div class="col-md-9">
+                            Gunung Bukit Raya is one of the seven highest peaks in Indonesia and is located in West Kalimantan. Heading to the top does not only require extra energy, but also costs a lot. Remembering the place is in the interior of the forest.
+                          </div>
+                        </div>
                       </div>
                     </div>
                 </div>
@@ -86,12 +112,12 @@
     <!-- end 1 -->
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>  
+    <script src="js/bootstrap.min.js"></script>
+    
+    
     <script src="js/navbar.js"></script>
-    <script src="js/menu.js"> </script>
-    <script src="assets/glyph-iconset-master/Gruntfile.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -8,11 +8,14 @@ $('.page-scroll').on('click', function(e){
 	var elemen = $(href);
 
 	// pindah scroll 
-	$('html , body').animate({
+	$('html,body').animate({
 		scrollTop: elemen.offset().top - 50
 	}, 1250, 'easeInOutExpo');
 
 	e.preventDefault(); 
+
+	console.log(e);
+	
 
 })
 
@@ -22,26 +25,26 @@ $(window).scroll(function() {
 
 	// header
 
-	$('.head img').css({
-		'transform' : 'translate(0px, '+ wscroll/5 +'%)'
-	});
+	// $('.head img').css({
+	// 	'transform' : 'translate(0px, '+ wscroll/5 +'%)'
+	// });
 
-	$('.head p').css({
-		'transform' : 'translate(0px, '+ wscroll*1.4 +'%)'
-	});
+	// $('.head p').css({
+	// 	'transform' : 'translate(0px, '+ wscroll*1.4 +'%)'
+	// });
 
-	$('.about p').css({
-		'transform' : 'translate(0px, '+ wscroll/12 +'%)'
-	});
+	// $('.about p').css({
+	// 	'transform' : 'translate(0px, '+ wscroll/12 +'%)'
+	// });
 
 	// menu
-	if( wscroll > $('.menu').offset().top - 300 ){
-		$('.menu .thumbnail').each(function(i){
-			setTimeout(function(){
-				$('.menu .thumbnail').eq(i).addClass('muncul');
-			}, 330 * (i+1));
-		});
-	}
+	// if( wscroll > $('.menu').offset().top - 300 ){
+	// 	$('.menu .thumbnail').each(function(i){
+	// 		setTimeout(function(){
+	// 			$('.menu .thumbnail').eq(i).addClass('muncul');
+	// 		}, 330 * (i+1));
+	// 	});
+	// }
 
 
 })
