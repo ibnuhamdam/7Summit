@@ -3,6 +3,10 @@ html {
 	width: auto; 
 }
 
+body {
+    min-height: 100vh;
+}
+
 .custom-navbar {
     background-color: rgba(0,0,0,0);
     /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
@@ -20,7 +24,7 @@ html {
 }
 
 .opaque {
-    background-color: rgba(38,144,212,1);
+    background-color: rgba(0,0,0,0.7);
     height: 50px;
     border-bottom: 0px;
     transition: background-color .5s ease 0s;
@@ -99,6 +103,7 @@ html {
     margin-top: 38%;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
+    text-shadow: 0 2px 2px blueviolet;
     font-weight: bold;
     line-height: 60px;
     font-size: 48px;
@@ -106,8 +111,6 @@ html {
     letter-spacing: -0.04em;
 
     color: #FFFFFF;
-
-
 }
 
 .s {
@@ -135,9 +138,83 @@ html {
     height: 50px;
 }
 
+.next {
+    margin-top: 10px;
+    border-radius: 4px;
+    border: none;
+    padding: 10px;
+    width: 120px;
+    transition: all 0.5s;
+    box-shadow: 4px 4px 15px black;
+}
+
+.next span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.next span:after{
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.8s;
+}
+
+.next a {
+    text-decoration: none;
+    color: white;
+}
+
+.next:hover {
+    box-shadow: 8px 6px 25px black;
+}
+
+.next:hover span {
+    padding-right: 25px;
+    
+}
+
+.next:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
 .goupactive {
     display: block ;
     transition: display 2s ease-in-out 3s;
+}
+
+.dua {
+    background: url('../assets/binaiya.png') fixed;
+    height: 668px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tiga {
+    background: url('../assets/Gunung\ Latimojong.png') ;
+    height: 668px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.empat {
+    background: url('../assets/Gunung-Semeru.jpg') fixed;
+    height: 668px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    height: 300px;
+    background-color: black;
 }
 
 @media(max-width: 786px) {

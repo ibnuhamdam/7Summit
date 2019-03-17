@@ -18,13 +18,18 @@ $(window).scroll(function() {
     console.log($(this).scrollTop());
     
 
+    if ($(this).scrollTop() < 612)
+    {
+        
     $('.sum p').css({
 		'transform' : 'translate('+ $(this).scrollTop()/20+'%, '+ $(this).scrollTop()/4 +'%)'
     });
     
     $('.mit').css({
 		'transform' : 'translate(-'+ $(this).scrollTop()/20+'%, '+ $(this).scrollTop()/4 +'%)'
-  });
+    });
+
+    }
   
   
 });

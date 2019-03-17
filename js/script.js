@@ -9,7 +9,7 @@ $('.page-scroll').on('click', function(e){
 
 	// pindah scroll 
 	$('html,body').animate({
-		scrollTop: elemen.offset().top - 50
+		scrollTop: elemen.offset().top
 	}, 1250, 'easeInOutExpo');
 
 	e.preventDefault(); 
