@@ -133,6 +133,10 @@ body {
     font-weight: bold;
 }
 
+.goup p {
+    text-shadow: 2px 2px 3px #515151;
+}
+
 .goup img {
     width: 50px;
     height: 50px;
@@ -213,8 +217,45 @@ body {
 }
 
 footer {
-    height: 300px;
-    background-color: black;
+    height: 240px;
+    background-color: #f1f4f9;
+}
+
+.foot h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.foot1 img {
+    width: 40px;
+    height: 40px;
+}
+
+.foot1 a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #515151;
+}
+
+.foot1 a:hover {
+    list-style-type: none;
+    text-decoration: none;
+    color: #0b0b0b;
+}
+
+.foot1 {
+    margin-top: 3%;
+}
+
+.bawah {
+    margin-top: 110px;
+    height: 40px;
+    background-color: #7a7a7a;
+}
+
+.bawah p {
+    padding-top: 5px;
+    margin-bottom: 0px;
 }
 
 @media(max-width: 786px) {
