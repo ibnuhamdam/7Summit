@@ -216,6 +216,30 @@ body {
     background-size: cover;
 }
 
+.lima {
+    background: url('../assets/gunung-rinjani.png') ;
+    height: 668px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.enam {
+    background: url('../assets/gunung-kerinci.jpg') fixed;
+    height: 668px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tujuha {
+    background: url('../assets/cartenz.png') fixed;
+    height: 668px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 footer {
     height: 240px;
     background-color: #f1f4f9;
@@ -258,6 +282,40 @@ footer {
     margin-bottom: 0px;
 }
 
-@media(max-width: 786px) {
-    
+@media(max-width: 768px) {
+    .sum p {
+        margin-top: 20%;
+        font-size: 40px;
+    }
+    .mit {
+        margin-top: 10%;
+        font-size: 40px;
+    }
+
+    .bukit {
+        margin-top: 12px;
+        color: #0b0b0b;
+        text-shadow: 0 2px 2px white;
+    }
+
+    .s {
+        font-size: 10px;
+    }
+
+    .goup {
+        margin-left: 90%;
+        font-size: 16px;
+    }
+    .goup img {
+        width: 20px;
+        height: 20px;
+    }
+    .next {
+        width: 90px;
+        height: 50px;
+        font-size: 16px;
+    }
+    .tujuh {
+        margin-top: 15%;
+    }
 }
